@@ -1,0 +1,136 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+         background-color: #ecbdbd85;
+    }
+    
+    #img{
+        position: absolute;
+        width: 20vw;
+        height: 33vh;
+    }
+
+    nav {
+        height: 13vh;
+        background-color: #f5bcbc;
+        border-bottom: 1px solid #b8b1b1;
+        padding: 0.75rem 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        box-shadow: 0 4px 12px rgba(22, 21, 21, 0.459);
+
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #0d1013;
+        text-decoration: none;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 3rem;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: #333;
+        font-size: 1rem;
+        transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+        color: #007bff;
+    }
+
+
+    @media (max-width: 768px) {
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            right: 10px;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 1rem;
+            z-index: 100;
+        }
+
+        .nav-links.show {
+            display: flex;
+        }
+
+    }
+
+    .search-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 70px;
+        z-index: 10;
+    }
+
+    .search-form input {
+        padding: 0.4rem 0.75rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+        height: 6vh;
+        width: 20vw;
+        text-align: center;
+    }
+
+    .search-form button {
+        padding: 0.4rem 0.9rem;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .search-form button:hover {
+        background-color: #0056b3;
+    }
+
+    @media (max-width: 768px) {
+        .search-form {
+            display: none;
+        }
+    }
+
+    .main{
+        height: 50vh;
+        width: 70%;
+        border: 2px solid #0000003f;
+        justify-self: center;
+        margin-top: 15px;
+        border-radius: 15px;
+        overflow: hidden;
+        text-align: center;
+    }
+    .main:hover{
+        box-shadow: 0 4px 12px rgba(22, 21, 21, 0.459);
+        cursor: pointer;
+    }
+
+    .heading{
+        background-color: #f5bcbc;
+    }
+
+    .imp{
+        line-height: 40px;
+    }
